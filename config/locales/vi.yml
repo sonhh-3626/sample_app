@@ -1,0 +1,50 @@
+vi:
+  header:
+    about: "Giới thiệu"
+    contact: "Liên hệ"
+    news: "Tin tức"
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    login: "Đăng nhập"
+    english: "Tiếng Anh"
+    vietnamese: "Tiếng Việt"
+
+  common:
+    the: " "
+    ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
+    by: "bởi"
+    base_title: "Ruby on Rails Tutorial Sample App"
+
+  about:
+    title: "Giới thiệu"
+    heading: "Giới thiệu"
+    description_html: >
+      %{tutorial_link}, một phần của hệ thống %{learn_enough_link},
+      là một %{book_link} và %{screencast_link} dùng để dạy phát triển web với %{rails_link}.
+      Đây là ứng dụng mẫu của hướng dẫn.
+
+  contact:
+    title: "Liên hệ"
+    heading: "Liên hệ"
+    contact_page: "trang liên hệ"
+    description_html: "Liên hệ với Ruby on Rails Tutorial về ứng dụng mẫu tại %{contact_link}."
+
+  home:
+    welcome: "Chào mừng đến với Rails on Ruby"
+    description_html: "Đây là trang chủ của ứng dụng mẫu của %{tutorial_link}."
+    signup_cta: "Đăng ký ngay!"
+
+  help:
+    title: "Trợ giúp"
+    heading: "Trợ giúp"
+    help_page: "trang trợ giúp của Rails Tutorial"
+    book_title: "Hướng dẫn Ruby on Rails"
+    description_html: >
+      Nhận trợ giúp về Ruby on Rails Tutorial tại %{help_page_link}.
+      Để nhận trợ giúp về ứng dụng mẫu này, hãy xem %{book_link}.
+
+  users:
+    new:
+      title: "Đăng ký"
+      heading: "Đăng ký"
+      description: "Đây sẽ là trang đăng ký dành cho người dùng mới."
