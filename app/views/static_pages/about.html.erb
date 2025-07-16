@@ -1,0 +1,12 @@
+<% provide :title, t("about.title") %>
+<h1><%= t("about.heading") %></h1>
+
+<p>
+  <%= t("about.description_html",
+    tutorial_link: link_to("Ruby on Rails Tutorial", Settings.tutorial_link),
+    learn_enough_link: link_to("Learn Enough", Settings.enough_link),
+    book_link: link_to("book", Settings.book_link),
+    screencast_link: link_to("screencast series", Settings.screencast_link),
+    rails_link: link_to("Ruby on Rails", Settings.rails_link)
+  ).html_safe %>
+</p>

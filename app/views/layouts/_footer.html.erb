@@ -1,0 +1,13 @@
+<footer class="footer">
+  <small>
+    <%= t "common.the" %> <a href="<%= Settings.tutorial_link %>"><%= t "common.ruby_on_rails_tutorial" %></a>
+    <%= t "common.by" %> <a href="<%= Settings.michaelhartl_link %>">Michael Hartl</a>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("header.about"), about_path %></li>
+      <li><%= link_to t("header.contact"), contact_path %></li>
+      <li><a href="<%= Settings.news_railstutorial_link %>">News</a></li>
+    </ul>
+  </nav>
+</footer>
