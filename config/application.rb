@@ -16,6 +16,7 @@ module RailsTutorial
     config.i18n.available_locales = [:en, :vi]
     config.i18n.default_locale = :en
 
+    config.email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #

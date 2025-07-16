@@ -9,3 +9,7 @@ news_railstutorial_link: "https://news.railstutorial.org/"
 michaelhartl_link: "https://www.michaelhartl.com/"
 
 rails_logo_width: "200"
+
+MAX_LENGTH_USERNAME: 50
+MAX_LENGTH_EMAIL: 255
+MIN_LENGTH_PASSWORD: 6
