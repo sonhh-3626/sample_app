@@ -6,6 +6,12 @@ en:
     home: "Home"
     help: "Help"
     login: "Log in"
+    logout: "Log out"
+    toggle_navigation: "Toggle navigation"
+    users: "Users"
+    account: "Account"
+    settings: "Settings"
+    profile: "Profile"
     english: "English"
     vietnamese: "Vietnamese"
 
@@ -67,3 +73,10 @@ en:
       x_errors:
         one: "The form contains 1 error."
         other: "The form contains %{count} errors."
+
+  session:
+    login:
+      title: "Log in"
+      sign_up_now: "Sign up now!"
+      invalid: "Invalid email/password combination"
+      success: "Logged in successfully"

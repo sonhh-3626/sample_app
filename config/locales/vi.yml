@@ -4,6 +4,12 @@ vi:
     contact: "Liên hệ"
     news: "Tin tức"
     home: "Trang chủ"
+    logout: "Đăng xuất"
+    users: "Danh sách người dùng"
+    account: "Tài khoản"
+    settings: "Cài đặt"
+    profile: "Hồ sơ"
+    toggle_navigation: "Chuyển đổi điều hướng"
     help: "Trợ giúp"
     login: "Đăng nhập"
     english: "Tiếng Anh"
@@ -60,3 +66,10 @@ vi:
       x_errors:
         one: "Form này chứa 1 lỗi."
         other: "Form này chứa %{count} lỗi."
+
+  session:
+    login:
+      title: "Đăng nhập"
+      sign_up_now: "Đăng ký ngay!"
+      invalid: "Email hoặc mật khẩu không chính xác"
+      success: "Đăng nhập thành công"
