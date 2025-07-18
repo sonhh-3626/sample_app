@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  PERMITTED_ATTRIBUTES = %w(name email password password_confirmation).freeze
   before_save{self.email = email.downcase}
 
   validates :name,

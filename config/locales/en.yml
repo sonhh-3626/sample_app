@@ -14,6 +14,7 @@ en:
     ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
     by: "By"
     base_title: "Ruby on Rails Tutorial Sample App"
+    welcome: "Welcome to the Sample App!"
 
   about:
     title: "About"
@@ -55,3 +56,14 @@ en:
       title: "Sign up"
       heading: "Sign up"
       description: "This will be a signup page for new users."
+      confirmation: "Confirmation"
+      create_my_account: "Create my account"
+
+    error:
+      user_not_found: "User not found"
+
+  errors:
+    messages:
+      x_errors:
+        one: "The form contains 1 error."
+        other: "The form contains %{count} errors."

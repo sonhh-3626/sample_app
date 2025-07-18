@@ -14,6 +14,7 @@ vi:
     ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
     by: "bởi"
     base_title: "Ruby on Rails Tutorial Sample App"
+    welcome: "Chào mừng đến với Sample App!"
 
   about:
     title: "Giới thiệu"
@@ -48,3 +49,14 @@ vi:
       title: "Đăng ký"
       heading: "Đăng ký"
       description: "Đây sẽ là trang đăng ký dành cho người dùng mới."
+      confirmation: "Xác nhận"
+      create_my_account: "Tạo tài khoản"
+
+    error:
+      user_not_found: "Không thấy người dùng"
+
+  errors:
+    messages:
+      x_errors:
+        one: "Form này chứa 1 lỗi."
+        other: "Form này chứa %{count} lỗi."
