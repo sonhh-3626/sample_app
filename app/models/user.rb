@@ -16,9 +16,16 @@ class User < ApplicationRecord
 
   validates :password,
             presence: true,
-            length: {minimum: Settings.MIN_LENGTH_PASSWORD}
+            length:   {
+              minimum: Settings.MIN_LENGTH_PASSWORD,
+              message: I18n.t("users.error.password_length",
+                              count: Settings.MIN_LENGTH_PASSWORD)
+            },
+            allow_nil: true
 
   has_secure_password
+
+  scope :order_by_name, ->{order(name: :asc)}
 
   class << self
     def digest string

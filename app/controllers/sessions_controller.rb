@@ -5,10 +5,11 @@ class SessionsController < ApplicationController
 
   def create
     if @user&.authenticate params.dig(:session, :password)
+      forwarding_url = session[:forwarding_url]
       reset_session
       handle_remember_me_for @user
       log_in @user
-      redirect_to @user
+      redirect_to forwarding_url || @user
       flash[:success] = t "session.login.success"
     else
       flash.now[:danger] = t "session.login.invalid"

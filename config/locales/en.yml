@@ -67,9 +67,30 @@ en:
       remember_me: "Remember me on this computer"
       log_in_btn: "Log in"
 
+    edit:
+      title: "Edit user"
+      heading: "Update your profile"
+      save_changes: "Save changes"
+      change_gravatar: "Change"
+
+
+    index:
+      all_users: "All users"
+      delete_btn: "Delete"
+      you_sure: "You sure?"
+
+    success:
+      updated: "Profile updated successfully"
+      deleted: "User deleted successfully"
+
     error:
       user_not_found: "User not found"
       invalid_email: "Invalid email address"
+      unlogged_in: "Please log in."
+      not_correct_user: "You are not authorized to edit this user."
+      not_admin: "You are not authorized to delete this user."
+      password_length: "Password must be at least %{count} characters long."
+      delete_failed: "Failed to delete user. Please try again later."
 
   errors:
     messages:
