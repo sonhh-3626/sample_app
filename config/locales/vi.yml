@@ -57,9 +57,12 @@ vi:
       description: "Đây sẽ là trang đăng ký dành cho người dùng mới."
       confirmation: "Xác nhận"
       create_my_account: "Tạo tài khoản"
+      remember_me: "Duy trì đăng nhập trên thiết bị này"
+      log_in_btn: "Đăng nhập"
 
     error:
       user_not_found: "Không thấy người dùng"
+      invalid_email: "Địa chỉ email không hợp lệ"
 
   errors:
     messages:
@@ -73,3 +76,4 @@ vi:
       sign_up_now: "Đăng ký ngay!"
       invalid: "Email hoặc mật khẩu không chính xác"
       success: "Đăng nhập thành công"
+      new_user: "Người dùng mới?"
