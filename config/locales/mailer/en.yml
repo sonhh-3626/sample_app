@@ -7,3 +7,23 @@ en:
       welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
       activate: "Activate"
       check_email: "Please check your email to activate your account."
+      success: "Account activated successfully"
+      error:
+        invalid_activation_link: "Invalid activation link! Please check your email for the correct link."
+
+    password_reset:
+      title: "Reset Password"
+      heading: "Reset Your Password"
+      new_password: "New Password"
+      confirm_password: "Confirm Password"
+      submit_btn: "Update Password"
+      subject: "Password reset"
+      follow_instructions: "To reset your password click the link below:"
+      expiry_notice: "This link will expire in two hours."
+      ignore_notice: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+      reset_link: "Reset password"
+      success: "Password has been reset successfully. You can now log in with your new password."
+      error:
+        pw_empty: "Password is empty. Please provide a password."
+        email_not_found: "Email not found!"
+        pw_reset_has_expired: "Password reset has expired. Please request a new one."

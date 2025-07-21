@@ -74,7 +74,6 @@ vi:
     success:
       updated: "Profile đã được cập nhật thành công"
       deleted: "User đã được xóa thành công"
-      activated: "Account activated successfully"
 
     error:
       user_not_found: "Không thấy người dùng"
@@ -84,7 +83,6 @@ vi:
       not_admin: "Bạn không có quyền quản trị."
       password_length: "Mật khẩu phải có ít nhất %{count} ký tự."
       delete_failed: "Xóa người dùng không thành công. Vui lòng thử lại sau."
-      invalid_activation_link: "Invalid activation link! Please check your email for the correct link."
 
   errors:
     messages:
@@ -100,3 +98,9 @@ vi:
       success: "Đăng nhập thành công"
       new_user: "Người dùng mới?"
       not_activated: "Tài khoản của bạn chưa được kích hoạt. Vui lòng kiểm tra email để biết liên kết kích hoạt."
+      _forgot_password_: "(quên mật khẩu)"
+
+    forgot_password:
+      title: "Quên mật khẩu"
+      submit_btn: "Gửi"
+      email_sent: "Email đã được gửi với hướng dẫn đặt lại mật khẩu"

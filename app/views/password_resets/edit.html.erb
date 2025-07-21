@@ -1,0 +1,24 @@
+<% provide(:title, t("mailer.password_reset.title")) %>
+<h1><%= t("mailer.password_reset.heading") %></h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with(model: @user, url: password_reset_path(params[:id])) do |f| %>
+      <%= render "shared/error_messages" %>
+
+      <%= hidden_field_tag :email, @user.email %>
+
+      <div class="form-group">
+        <%= f.label :password, t("mailer.password_reset.new_password") %>
+        <%= f.password_field :password, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :password_confirmation, t("mailer.password_reset.confirm_password") %>
+        <%= f.password_field :password_confirmation, class: "form-control" %>
+      </div>
+
+      <%= f.submit t("mailer.password_reset.submit_btn"), class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
