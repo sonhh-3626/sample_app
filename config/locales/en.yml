@@ -64,9 +64,12 @@ en:
       description: "This will be a signup page for new users."
       confirmation: "Confirmation"
       create_my_account: "Create my account"
+      remember_me: "Remember me on this computer"
+      log_in_btn: "Log in"
 
     error:
       user_not_found: "User not found"
+      invalid_email: "Invalid email address"
 
   errors:
     messages:
@@ -80,3 +83,4 @@ en:
       sign_up_now: "Sign up now!"
       invalid: "Invalid email/password combination"
       success: "Logged in successfully"
+      new_user: "New user?"
