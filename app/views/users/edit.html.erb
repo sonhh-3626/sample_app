@@ -1,0 +1,13 @@
+<% provide(:title, t("users.edit.title")) %>
+<% provide(:button_text, t("users.edit.save_changes")) %>
+<h1><%= t("users.edit.heading") %></h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= render "form" %>
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <%= link_to t("users.edit.change_gravatar"), Settings.gravatar_emails_url, target: "_blank" %>
+    </div>
+  </div>
+</div>

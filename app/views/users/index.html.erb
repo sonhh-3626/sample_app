@@ -1,0 +1,7 @@
+<% provide(:title, t("users.index.all_users")) %>
+<h1><%= t "users.index.all_users" %></h1>
+
+<%== pagy_bootstrap_nav @pagy if @pagy.pages > Settings.minimum_pages_for_pagination_1_page %>
+<ul class="users">
+  <%= render @users %>
+</ul>

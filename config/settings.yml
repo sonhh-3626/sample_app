@@ -7,7 +7,8 @@ screencast_link: "https://screencasts.railstutorial.org/"
 rails_link: "https://rubyonrails.org/"
 news_railstutorial_link: "https://news.railstutorial.org/"
 michaelhartl_link: "https://www.michaelhartl.com/"
-gravatar_url: "https://secure.gravatar.com/avatar/"
+gravatar_avatar_url: "https://secure.gravatar.com/avatar/"
+gravatar_emails_url: "https://gravatar.com/emails"
 
 rails_logo_width: "200"
 
@@ -18,3 +19,8 @@ MIN_LENGTH_PASSWORD: 6
 DEFAULT_SIZE_GRAVATAR: 80
 
 remember_me_enabled: "1"
+
+gravatar_size_50: 50
+items_per_page_20: 20
+
+minimum_pages_for_pagination_1_page: 1

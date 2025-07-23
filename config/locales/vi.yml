@@ -60,9 +60,29 @@ vi:
       remember_me: "Duy trì đăng nhập trên thiết bị này"
       log_in_btn: "Đăng nhập"
 
+    edit:
+      title: "Edit user"
+      heading: "Chỉnh sửa profile"
+      save_changes: "Lưu thay đổi"
+      change_gravatar: "Thay đổi"
+
+    index:
+      all_users: "Tất cả người dùng"
+      delete_btn: "Xóa"
+      you_sure: "Bạn có chắc không?"
+
+    success:
+      updated: "Profile đã được cập nhật thành công"
+      deleted: "User đã được xóa thành công"
+
     error:
       user_not_found: "Không thấy người dùng"
       invalid_email: "Địa chỉ email không hợp lệ"
+      unlogged_in: "Vui lòng đăng nhập."
+      not_correct_user: "Bạn không được phép chỉnh sửa người dùng này."
+      not_admin: "Bạn không có quyền quản trị."
+      password_length: "Mật khẩu phải có ít nhất %{count} ký tự."
+      delete_failed: "Xóa người dùng không thành công. Vui lòng thử lại sau."
 
   errors:
     messages:
