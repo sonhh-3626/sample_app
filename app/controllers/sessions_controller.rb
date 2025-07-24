@@ -5,15 +5,9 @@ class SessionsController < ApplicationController
 
   def create
     if @user&.authenticate params.dig(:session, :password)
-      forwarding_url = session[:forwarding_url]
-      reset_session
-      handle_remember_me_for @user
-      log_in @user
-      redirect_to forwarding_url || @user
-      flash[:success] = t "session.login.success"
+      handle_authenticated_user
     else
-      flash.now[:danger] = t "session.login.invalid"
-      render :new, status: :unprocessable_entity
+      handle_invalid_login
     end
   end
 
@@ -39,5 +33,25 @@ class SessionsController < ApplicationController
     else
       forget user
     end
+  end
+
+  def handle_authenticated_user
+    if @user.activated?
+      forwarding_url = session[:forwarding_url]
+      reset_session
+      handle_remember_me_for @user
+      log_in @user
+      redirect_to forwarding_url || @user
+      flash[:success] = t "session.login.success"
+    else
+      message = t("session.login.not_activated")
+      flash[:warning] = message
+      redirect_to root_url
+    end
+  end
+
+  def handle_invalid_login
+    flash.now[:danger] = t "session.login.invalid"
+    render :new, status: :unprocessable_entity
   end
 end

@@ -34,13 +34,6 @@ en:
     title: "Contact"
     heading: "Contact"
     contact_page: "contact page"
-    description_html: >
-      Contact the Ruby on Rails Tutorial about the sample app at the %{contact_link}.
-
-  contact:
-    title: "Contact"
-    heading: "Contact"
-    contact_page: "contact page"
     description_html: "Contact the Ruby on Rails Tutorial about the sample app at the %{contact_link}."
 
   home:
@@ -73,7 +66,6 @@ en:
       save_changes: "Save changes"
       change_gravatar: "Change"
 
-
     index:
       all_users: "All users"
       delete_btn: "Delete"
@@ -82,6 +74,7 @@ en:
     success:
       updated: "Profile updated successfully"
       deleted: "User deleted successfully"
+      activated: "Account activated successfully"
 
     error:
       user_not_found: "User not found"
@@ -91,6 +84,7 @@ en:
       not_admin: "You are not authorized to delete this user."
       password_length: "Password must be at least %{count} characters long."
       delete_failed: "Failed to delete user. Please try again later."
+      invalid_activation_link: "Invalid activation link! Please check your email for the correct link."
 
   errors:
     messages:
@@ -105,3 +99,4 @@ en:
       invalid: "Invalid email/password combination"
       success: "Logged in successfully"
       new_user: "New user?"
+      not_activated: "Your account is not activated. Please check your email for the activation link."
