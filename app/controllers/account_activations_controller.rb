@@ -4,10 +4,10 @@ class AccountActivationsController < ApplicationController
   # GET /account_activations/:id/edit
   def edit
     if activate_for(@user)
-      flash[:success] = t "users.success.activated"
+      flash[:success] = t "mailer.account_activation.success"
       redirect_to @user
     else
-      flash[:danger] = t "users.error.invalid_activation_link"
+      flash[:danger] = t "mailer.error.invalid_activation_link"
       redirect_to root_url, status: :see_other
     end
   end

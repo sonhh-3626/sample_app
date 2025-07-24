@@ -25,3 +25,4 @@ gravatar_size_50: 50
 items_per_page_20: 20
 
 minimum_pages_for_pagination_1_page: 1
+PASSWORD_RESET_EXPIRATION_2: 2

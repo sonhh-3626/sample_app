@@ -7,3 +7,23 @@ vi:
       welcome: "Chào mừng đến với Sample App! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
       activate: "Kích hoạt"
       check_email: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản."
+      success: "Kích hoạt tài khoản thành công"
+      error:
+        invalid_activation_link: "Liên kết kích hoạt không hợp lệ! Vui lòng kiểm tra email để lấy liên kết đúng."
+
+    password_reset:
+      title: "Đặt lại mật khẩu"
+      heading: "Đặt lại mật khẩu của bạn"
+      new_password: "Mật khẩu mới"
+      confirm_password: "Xác nhận mật khẩu"
+      submit_btn: "Cập nhật mật khẩu"
+      subject: "Đặt lại mật khẩu"
+      follow_instructions: "Để đặt lại mật khẩu, vui lòng nhấp vào liên kết bên dưới:"
+      expiry_notice: "Liên kết này sẽ hết hạn sau hai giờ."
+      ignore_notice: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ không bị thay đổi."
+      reset_link: "Đặt lại mật khẩu"
+      success: "Mật khẩu đã được đặt lại thành công. Bạn có thể đăng nhập bằng mật khẩu mới."
+      error:
+        pw_empty: "Mật khẩu trống. Vui lòng nhập mật khẩu."
+        email_not_found: "Không tìm thấy email!"
+        pw_reset_has_expired: "Yêu cầu đặt lại mật khẩu đã hết hạn. Vui lòng gửi yêu cầu mới."
