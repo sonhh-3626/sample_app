@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      user.send_activation_email
+      @user.send_activation_email
       flash[:info] = t "mailer.account_activation.check_email"
       redirect_to root_url
     else
@@ -20,7 +20,12 @@ class UsersController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy(
+      @user.microposts,
+      limit: Settings.items_per_page_20
+    )
+  end
 
   def index
     @pagy, @users = pagy User.order_by_name, limit: Settings.items_per_page_20
@@ -58,16 +63,6 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit User::PERMITTED_ATTRIBUTES
-  end
-
-  def logged_in_user
-    unlogged_in_notification unless logged_in?
-  end
-
-  def unlogged_in_notification
-    store_location
-    flash[:danger] = t "users.error.unlogged_in"
-    redirect_to login_url, status: :see_other
   end
 
   def correct_user

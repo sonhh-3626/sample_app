@@ -40,6 +40,7 @@ vi:
     welcome: "Chào mừng đến với Rails on Ruby"
     description_html: "Đây là trang chủ của ứng dụng mẫu của %{tutorial_link}."
     signup_cta: "Đăng ký ngay!"
+    micropost_feed: "Danh sách bài đăng"
 
   help:
     title: "Trợ giúp"
@@ -70,6 +71,9 @@ vi:
       all_users: "Tất cả người dùng"
       delete_btn: "Xóa"
       you_sure: "Bạn có chắc không?"
+
+    show:
+      view_my_profile: "Xem hồ sơ của tôi"
 
     success:
       updated: "Profile đã được cập nhật thành công"

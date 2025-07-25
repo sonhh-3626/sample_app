@@ -40,6 +40,7 @@ en:
     welcome: "Welcome to the Sample App"
     description_html: "This is the home page for the %{tutorial_link} sample application."
     signup_cta: "Sign up now!"
+    micropost_feed: "Micropost Feed"
 
   help:
     title: "Help"
@@ -70,6 +71,9 @@ en:
       all_users: "All users"
       delete_btn: "Delete"
       you_sure: "You sure?"
+
+    show:
+      view_my_profile: "View my profile"
 
     success:
       updated: "Profile updated successfully"
