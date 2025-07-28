@@ -26,3 +26,7 @@ items_per_page_20: 20
 
 minimum_pages_for_pagination_1_page: 1
 PASSWORD_RESET_EXPIRATION_2: 2
+MAX_LENGTH_MICROPOST_CONTENT_140: 140
+IMAGE_RESIZE_TO_LIMIT_500_500: [500, 500]
+IMAGE_SIZE_LARGE_LIMIT_5: 5
+ACCEPTED_FORMAT_IMAGE: "image/jpeg,image/gif,image/png"

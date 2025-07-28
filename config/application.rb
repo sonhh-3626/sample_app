@@ -17,5 +17,7 @@ module RailsTutorial
     config.i18n.default_locale = :en
 
     config.email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+
+    config.active_storage.variant_processor = :mini_magick
   end
 end

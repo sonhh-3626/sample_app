@@ -1,0 +1,16 @@
+en:
+  microposts:
+    posted_ago: "Posted %{time} ago."
+    microposts_count: "Microposts  %{count}"
+    success:
+      created: "Micropost created successfully"
+      deleted: "Micropost deleted successfully"
+    validations:
+      image_invalid_format: "Image must be a valid format (jpeg, gif, png)"
+      image_size_too_large: "Maximum file size is %{max_size}MB. Please choose a smaller file."
+    form:
+      post_btn: "Post"
+      delete_btn: "Delete"
+      content_placeholder: "Compose new micropost..."
+      micropost: "micropost"
+      you_sure: "Are you sure you want to delete this micropost?"

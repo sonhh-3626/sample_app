@@ -62,6 +62,8 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
+  # Raises error for missing translations. https://viblo.asia/p/su-dung-i18n-trong-javascript-dung-gem-i18n-js-d6BAMYKAvnjz
+  config.middleware.use I18n::JS::Middleware
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 

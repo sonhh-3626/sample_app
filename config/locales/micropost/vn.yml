@@ -1,0 +1,16 @@
+vi:
+  microposts:
+    posted_ago: "Đã đăng %{time} trước."
+    microposts_count: "Bài đăng %{count}"
+    success:
+      created: "Đăng bài thành công"
+      deleted: "Xóa bài thành công"
+    validations:
+      image_invalid_format: "Hình ảnh phải có định dạng hợp lệ (jpeg, gif, png)"
+      image_size_too_large: "Dung lượng tối đa là %{max_size}MB. Vui lòng chọn ảnh nhỏ hơn."
+    form:
+      post_btn: "Đăng bài"
+      content_placeholder: "Viết bài mới..."
+      micropost: "bài đăng"
+      delete_btn: "Xóa"
+      you_sure: "Bạn có chắc chắn muốn xóa bài đăng này không?"
