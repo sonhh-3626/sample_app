@@ -41,6 +41,11 @@ en:
     description_html: "This is the home page for the %{tutorial_link} sample application."
     signup_cta: "Sign up now!"
     micropost_feed: "Micropost Feed"
+    stats:
+      following: "Following"
+      followers: "Followers"
+    follow_btn: "Follow"
+    unfollow_btn: "Unfollow"
 
   help:
     title: "Help"
@@ -74,6 +79,8 @@ en:
 
     show:
       view_my_profile: "View my profile"
+      title_following: "Following"
+      title_followers: "Followers"
 
     success:
       updated: "Profile updated successfully"

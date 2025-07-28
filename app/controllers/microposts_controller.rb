@@ -10,7 +10,10 @@ class MicropostsController < ApplicationController
       flash[:success] = t "microposts.success.created"
       redirect_to root_path
     else
-      @pagy, @feed_items = pagy @user.microposts.order_by_latest, page: params[:page]
+      @pagy, @feed_items = pagy(
+        @user.microposts.order_by_latest,
+        page: params[:page]
+      )
       render "static_pages/home", status: :unprocessable_entity
     end
   end

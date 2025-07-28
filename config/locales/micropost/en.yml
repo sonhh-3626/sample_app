@@ -5,6 +5,9 @@ en:
     success:
       created: "Micropost created successfully"
       deleted: "Micropost deleted successfully"
+    errors:
+      user_not_found: "User not found"
+      micropost_not_found: "Micropost not found"
     validations:
       image_invalid_format: "Image must be a valid format (jpeg, gif, png)"
       image_size_too_large: "Maximum file size is %{max_size}MB. Please choose a smaller file."

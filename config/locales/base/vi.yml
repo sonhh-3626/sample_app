@@ -41,6 +41,11 @@ vi:
     description_html: "Đây là trang chủ của ứng dụng mẫu của %{tutorial_link}."
     signup_cta: "Đăng ký ngay!"
     micropost_feed: "Danh sách bài đăng"
+    stats:
+      following: "Đang theo dõi"
+      followers: "Người theo dõi"
+    follow_btn: "Theo dõi"
+    unfollow_btn: "Bỏ theo dõi"
 
   help:
     title: "Trợ giúp"

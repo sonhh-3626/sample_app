@@ -2,7 +2,12 @@ class User < ApplicationRecord
   attr_accessor :remember_token, :activation_token, :reset_token
 
   has_many :microposts, dependent: :destroy
-
+  has_many :active_relationships, class_name: Relationship.name,
+           foreign_key: :follower_id, dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :passive_relationships, class_name: Relationship.name,
+           foreign_key: :followed_id, dependent: :destroy
+  has_many :followers, through: :passive_relationships, source: :follower
   before_save :downcase_email
   before_create :create_activation_digest
   before_save{self.email = email.downcase}
@@ -21,7 +26,7 @@ class User < ApplicationRecord
             uniqueness: {case_sensitive: false}
 
   validates :password,
-            presence: true,
+            # presence: true,
             length:   {
               minimum: Settings.MIN_LENGTH_PASSWORD,
               message: I18n.t("users.error.password_length",
@@ -90,6 +95,30 @@ class User < ApplicationRecord
 
   def send_password_reset_email
     UserMailer.password_reset(self).deliver_now
+  end
+
+  def feed
+    # Micropost.where("user_id IN (?) OR user_id = ?", following_ids, id)
+    following_ids = "SELECT followed_id FROM relationships
+                    WHERE follower_id = :user_id"
+    Micropost.where("user_id IN (#{following_ids})
+                    OR user_id = :user_id", user_id: id)
+             .includes(:user, image_attachment: :blob)
+  end
+
+  # Follows a user.
+  def follow other_user
+    following << other_user unless self == other_user
+  end
+
+  # Unfollows a user.
+  def unfollow other_user
+    following.delete other_user
+  end
+
+  # Returns true if the current user is following the other user.
+  def following? other_user
+    following.include? other_user
   end
 
   private

@@ -1,0 +1,3 @@
+<%= form_with(model: get_followed_relationship_with(@user), html: { method: :delete }) do |f| %>
+  <%= f.submit t("home.unfollow_btn"), class: "btn" %>
+<% end %>

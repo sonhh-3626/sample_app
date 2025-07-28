@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: %i(index edit update destroy)
-  before_action :load_user, only: %i(show edit update destroy)
+  before_action :logged_in_user,
+                only: %i(index edit update destroy following followers)
+  before_action :load_user,
+                only: %i(show edit update destroy following followers)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
   before_action :check_user_activated?, only: :show
@@ -51,7 +53,26 @@ class UsersController < ApplicationController
     redirect_to users_url, status: :see_other
   end
 
+  def following
+    @title = t "users.show.title_following"
+    @pagy, @users = pagy(
+      current_user.following,
+      limit: Settings.items_per_page_20
+    )
+    render "show_follow", status: :unprocessable_entity
+  end
+
+  def followers
+    @title = t "users.show.title_followers"
+    @pagy, @users = pagy current_user.followers, limit: Settings.items_per_page_20
+    render "show_follow", status: :unprocessable_entity
+  end
+
   private
+
+  def user_params
+    params.require(:user).permit User::PERMITTED_ATTRIBUTES
+  end
 
   def load_user
     @user = User.find_by id: params[:id]
@@ -59,10 +80,6 @@ class UsersController < ApplicationController
 
     flash[:alert] = t "users.error.user_not_found"
     redirect_to root_path, status: :see_other
-  end
-
-  def user_params
-    params.require(:user).permit User::PERMITTED_ATTRIBUTES
   end
 
   def correct_user

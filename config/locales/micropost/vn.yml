@@ -5,6 +5,9 @@ vi:
     success:
       created: "Đăng bài thành công"
       deleted: "Xóa bài thành công"
+    errors:
+      user_not_found: "Không tìm thấy người dùng"
+      micropost_not_found: "Không tìm thấy bài đăng"
     validations:
       image_invalid_format: "Hình ảnh phải có định dạng hợp lệ (jpeg, gif, png)"
       image_size_too_large: "Dung lượng tối đa là %{max_size}MB. Vui lòng chọn ảnh nhỏ hơn."
